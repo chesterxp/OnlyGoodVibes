@@ -45,7 +45,7 @@ gulp.task('start', function(){
 	console.log('Buduje paczkę....');
 })
 gulp.task('styles', function () {
-	return gulp.src('./css/*.scss')
+	return gulp.src('./css/main.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(cssnano())
@@ -56,7 +56,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('./js/*.js')
+	return gulp.src('./js/main.js')
 		.pipe(babel({
 			presets: ['@babel/preset-env']
 		}))
