@@ -2,3 +2,5 @@ node_modules
 *.log
 .cache
 image
+prod
+package-lock.json

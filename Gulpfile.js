@@ -6,6 +6,11 @@ var autoprefixer = require('gulp-autoprefixer');
 let uglify = require('gulp-uglify-es').default;
 let babel = require('gulp-babel');
 var runSequence = require('run-sequence');
+var gzip = require('gulp-gzip');
+const packageJson = require('./package.json');
+const version = packageJson.version;
+
+console.log('version',version)
 
 gulp.task('watch', function () {
 	gulp.watch('./css/*.scss', ['sass-dev']);
@@ -16,6 +21,7 @@ gulp.task('watch', function () {
 gulp.task('sass-dev', function () {
 	return gulp.src('./css/*.scss')
 		.pipe(sass().on('error', sass.logError))
+		// .pipe(gzip())
 		.pipe(rename({
 			suffix: '.min'
 		}))
@@ -26,7 +32,7 @@ gulp.task('sass-dev', function () {
 gulp.task('scripts-dev', function () {
 	return gulp.src('./js/main.js')
 		.pipe(rename({
-			suffix: '.min'
+			suffix: '.min.gz'
 		}))
 		.pipe(gulp.dest('./js'));
 });
@@ -49,10 +55,11 @@ gulp.task('styles', function () {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
 		.pipe(cssnano())
+		// .pipe(gzip())
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest(`./css`));
 });
 
 gulp.task('scripts', function () {
@@ -63,10 +70,11 @@ gulp.task('scripts', function () {
 		.pipe(uglify({
 			compress: true
 		}))
+		// .pipe(gzip())
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulp.dest('./js'));
+		.pipe(gulp.dest(`./js`));
 });
 
 gulp.task('end', function(){
