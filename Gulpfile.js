@@ -32,7 +32,7 @@ gulp.task('sass-dev', function () {
 gulp.task('scripts-dev', function () {
 	return gulp.src('./js/main.js')
 		.pipe(rename({
-			suffix: '.min.gz'
+			suffix: '.min'
 		}))
 		.pipe(gulp.dest('./js'));
 });
