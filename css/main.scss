@@ -425,6 +425,7 @@ $transition: all 0.3s ease-out;
     }
     &__cursive{
         font-style: italic;
+        display: inline-block;
     }
     &__p{
         margin-bottom: 15px;
@@ -511,6 +512,11 @@ $transition: all 0.3s ease-out;
         font-size: 12px;
     }
 
+}
+
+.fb__btn{
+    display: block !important;
+    text-align: center;
 }
 
 @media all and (min-width: 800px) {
@@ -762,6 +768,9 @@ $transition: all 0.3s ease-out;
             }
         }
         
+    }
+    .fb__btn{
+        text-align: left;
     }
 }
 
