@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97017090-7"></script>
     <script>
@@ -26,8 +27,17 @@
         gtag('config', 'UA-97017090-7');
     </script>
 
+    <meta property="og:url"                content="http://onlygoodvibes.pl/articles/article7.html" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Odporność na przedwiośniu" />
+    <meta property="og:description"        content="Tym razem poruszę temat wzmacniania swojej odporności..." />
+    <meta property="og:image"              content="http://onlygoodvibes.pl/image/desktop/photo7.jpg" />
+
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="dv4Kj6yd"></script>
+
     <div class="navigation">
         <a href="../index.html" class="logoOGV logoOGV--nav">
             <div class="logoOGV__box">
@@ -39,7 +49,7 @@
         </a>
         <div class="navigation__list">
             <a class="navigation__link" href="../index.html#aboutMe">O Mnie</a>
-            <a class="navigation__link" href="#articles">Artykuły</a>
+            <a class="navigation__link" href="../articles/articles.html">Artykuły</a>
             <a class="navigation__link" href="#contact">Kontakt</a>
         </div>
         <div class="navigation__hamburger">
@@ -48,104 +58,75 @@
             </div>
         </div>
     </div>
-    <div class="article__hero">
-        <div class="article__heroImg article__heroImg--position" data-image-src='{"type":"background","desktopSrc":"photo0b.jpg"}'></div>
+    <div class="recipe">
+        <div class="recipe__top">
+            <div class="recipe__imageBox">
+                <img src="../image/desktop/photo2.jpg" alt="Zdjecie naleśnika" class="recipe__image">
+                <div class="recipe__info">
+                    <div class="recipe__kcal">354 kcal</div>
+                    <div class="recipe__macro">
+                        <div class="recipe__ingredient recipe__ingredient--protein">B 36</div>
+                        <div class="recipe__ingredient recipe__ingredient--carbohydrates">W 116</div>
+                        <div class="recipe__ingredient recipe__ingredient--fats">T 26</div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe__dishInfo">
+                <div class="recipe__dishName">Omlet owocowo-kokosowy</div>
+                <div class="recipe__title">Składniki</div>
+                <div class="recipe__ingredients">
+                    <div class="recipe__ingredient">2 jaja wiejskie</div>
+                    <div class="recipe__ingredient">30 g mąki kokosowej</div>
+                    <div class="recipe__ingredient">Łyżeczka erytrytolu</div>
+                    <div class="recipe__ingredient">Pół łyżeczki bezglutenowego proszku do pieczenia</div>
+                    <div class="recipe__ingredient">Szczypta cynamonu</div>
+                    <div class="recipe__ingredient">Mleko migdałowe około 20 ml</div>
+                </div>
+                <div class="recipe__title recipe__title--extra">Moje dodatki:</div>
+                <div class="recipe__ingredients">
+                    <div class="recipe__ingredient">30 gram jogurtu vege kokos</div>
+                    <div class="recipe__ingredient">Garść mrożonych wiśni i malin</div>
+                    <div class="recipe__ingredient">Szzypta sezamu i wiórek kokosowych</div>
+                    <div class="recipe__ingredient">Odrobina tartej gorzkiej czekolady</div>
+                    <div class="recipe__ingredient">Sos zero kalorii czekolada-karmel</div>
+                </div>
+            </div>
+        </div>
+        <div class="recipe__bottom">
+            <div class="recipe__preperTitle">Przygotowanie</div>
+            <div class="recipe__description">
+                Rozbij jajka i roztrzep je dokładnie. Dodaj erytrytol do jakiej i wymieszaj trzepaczką. Wsyp mąkę, proszek, cynamon i także dokładnie roztrzep. Mąka kokosowa jest dość specyficzna w przygotowaniu ponieważ bardzo chłonie płyny, dlatego masa jest dość gęsta, dodaj wtedy około 20 lub 30 ml mleka migdałowego. Jeśli będzie nadal bardzo gęsta dodaj ciut więcej. Wszystko dokładnie mieszaj trzepaczką. Wlej masę na dobrze rozgrzaną patelnię natłuszczoną wcześniej oliwą. Smaż omlet na połowie mocy kuchenki lub indukcji. Rozlej masę na całą patelnię, przykryj przykrywką. Kiedy już spód będzie zwarty, delikatnie przewróc na drugą stronę.
+            </div>
+            <div class="recipe__description">
+                Na gotowy omlet nakładam jogurt kokosowy, mrożone wiśnie i maliny lekko podrzane. Posypuję szczyptą sezamu, wiórek kokosowych, odrobiną tartej gorzkiej czekolady. Na koniec polewam do smaku sosem zero kalorii czekolada-karmel.
+            </div>
+            <div class="recipe__description">
+                Jeśli nie masz akurat mąki kokosowej może być to każda inna. Ja również używam ich zamiennie. Są to gryczana, jaglana, ryżowa, kukurydziana, kasztanowa. Tak samo możesz użyć innego mleka czy słodzidła. Dodatki to już także Twoja inwencja twórcza! Kombinuj i baw się!
+            </div>
+            <div class="recipe__description recipe__description--bold">
+                POWYŻSZE makro dotyczy dokładnie składu produktów w przepisie.
+            </div>
+        </div>
     </div>
-    <div class="articlesBox" id="articles">
-        <h1 class="articlesBox__mainTitle">Pozytywne wibracje</h1>
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./article8.html">
 
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Zdrowie</div>
-                <div class="articlesBox__articleTitle">Odporność na przedwiośniu <br> cz. 2</div>
-                <div class="articlesBox__articleText">
-                    Ta część to kolejna dawka praktycznych informacji na temat wzmacniania odporności. Probiotyki, witaminy, czosnek, aronia i inni goście zapraszają!
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo8.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement" href="./article7.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Przepisy</div>
-                <div class="articlesBox__articleTitle">Omlet <br> kokosowo-owocowy</div>
-                <div class="articlesBox__articleText">
-                    Oto moja propozycja zdrowego śniadania...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo7.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./article6.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Zdrowie</div>
-                <div class="articlesBox__articleTitle">Odporność na przedwiośniu <br> cz. 1</div>
-                <div class="articlesBox__articleText">
-                    Temat przypłynął do mnie wraz z moją kolacją. Patrząc na nią stwierdziłam, że właśnie cudownie wspomagam swoją odporność. Dlaczego się tym teraz nie podzielić z moimi czytelnikami.
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo6.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement" href="./article5.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Nasz szanowny towarzysz <br> Pan Stres cz. 2</div>
-                <div class="articlesBox__articleText">
-                    To co właśnie masz przed oczyma to kolejna część artykułu o naszym nieustannym druhu Panu Stresie. Zapraszam Cię do dalszej części lektury, jeśli stwierdzisz, że to zbyt wiele tekstu jak na jeden raz śmiało rób sobie przerwy. 
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo5.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./article4.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Nasz szanowny towarzysz <br> Pan Stres cz. 1</div>
-                <div class="articlesBox__articleText">
-                    Kilka dni temu obchodziliśmy rocznicę wybuchu pandemii w naszym kraju. Czy nie brzmi to niczym z podręcznika do historii?
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo4.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement" href="./article3.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto i zdrowie</div>
-                <div class="articlesBox__articleTitle">S-E-N <br/> Spokój, Energia, Normalność</div>
-                <div class="articlesBox__articleText">
-                    Sen jest najważniejszą formą regeneracji dla naszego organizmu.  Zarówno dla naszego ciała jak i umysłu...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo3.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./article2.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Dieta</div>
-                <div class="articlesBox__articleTitle">Od-ważne od-żywianie</div>
-                <div class="articlesBox__articleText">
-                    Choroby autoimmunologiczne to armagedon dzisiejszych czasów. Często atakują organizm po cichu, z ukrycia, towarzyszą różnym wydarzeniom w życiu. Tak było w moim przypadku...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo2.jpg","size":"small"}'></div>
-        </a>
-
-        <a class="articlesBox__article showHideElement" href="./article1.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto</div>
-                <div class="articlesBox__articleTitle">Dla obdarowanych hashimoto i nie tylko</div>
-                <div class="articlesBox__articleText">
-                    Hashimoto - czyli co tak naprawdę odmieniło moje życie…  Mogę stwierdzić, że choroba ta bywa istnym demonem a jednocześnie błogosławieństwem...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo1.jpg","size":"small"}'></div>
-        </a>
-
+    <div class="nextArticles">
+        <div class="nextArticles__mainTitle">Inne pozytywne wibracje</div>
+        <div class="nextArticles__box">
+            <a href="../articles/articles.html" class="nextArticles__article nextArticles__articles--left showHideElement">
+                <div class="nextArticles__articleArrow">Nastepny wpis</div>
+                <div data-image-src='{"type":"background","desktopSrc":"photo0.jpg"}' alt=""class="nextArticles__articleImage"></div>
+                <div class="nextArticles__articleTitle">Pozytywne wibracje - Wszystkie wpisy</div>
+            </a>
+            <a href="../articles/article5.html" class="nextArticles__article nextArticles__articles--right showHideElement">
+                <div class="nextArticles__articleArrow">Poprzedni wpis</div>
+                <div data-image-src='{"type":"background","desktopSrc":"photo5.jpg"}' alt=""class="nextArticles__articleImage"></div>
+                <div class="nextArticles__articleTitle">Nasz szanowny towarzysz - Pan Stres cz. 2</div>
+            </a>
+        </div>
     </div>
+
     <div class="footer showHideElement" id="contact">
         <div class="footer__box footer__box--contact">
-            <!-- <div class="footer__link">Kontakt</div> -->
             <div class="footer__link">only.good.vibes@wp.pl</div>
         </div>
         <div class="footer__box footer__box--icon">
@@ -170,7 +151,7 @@
             </a>
         </div>
         <div class="footer__box footer__box--webRights">
-            Only Good Vibes <span class="currentYear">2020 </span> © Designed By <div class="footer__author">Luki</div>
+            Only Good Vibes <span class="currentYear">2020</span> © Designed By <div class="footer__author">Luki</div>
         </div>
     </div>
 </body>
