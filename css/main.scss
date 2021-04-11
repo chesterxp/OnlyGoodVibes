@@ -426,6 +426,27 @@ $transition: all 0.3s ease-out;
     &__cursive{
         font-style: italic;
         display: inline-block;
+        color: $pink;
+    }
+    &__special1{
+        color: $black;
+        font-weight: bold;
+    }
+    &__special2{
+        text-align: center;
+        color: $pink;
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: bold;
+        padding: 0px 20px 10px;
+    }
+    &__list{
+        padding-left: 20px;
+        margin-top: -15px;
+        li{
+            padding-left: 5px;
+            margin-left: 5px;
+        }
     }
     &__green{
         color: rgb(15, 184, 57);
@@ -804,6 +825,13 @@ $transition: all 0.3s ease-out;
                 filter: brightness(1.2);
                 cursor: pointer;
             }
+        }
+        &__special2{
+            font-size: 40px;
+        }
+        &__list{
+            padding-left: 20px;
+            margin-left: 20px;
         }
     }
     .nextArticles{
