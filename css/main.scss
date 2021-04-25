@@ -1,3 +1,13 @@
+$blueDark: #6267d3;
+$blueLight: #a19fe0;
+$pink: #d090d5;
+$black: #222;
+$gray: #8f8f8f;
+$shadowBox: 3px 3px 10px 0 #222;
+$line: linear-gradient(270deg,$blueDark,$blueLight,$pink);
+$line2: linear-gradient(270deg,$pink, $blueLight, $blueDark);
+$transition: all 0.3s ease-out;
+
 *{
     margin: 0;
     padding: 0;
@@ -12,14 +22,6 @@ body{
     padding-top: 54px;
 }
 
-$blueDark: #6267d3;
-$blueLight: #a19fe0;
-$pink: #d090d5;
-$black: #222;
-$gray: #8f8f8f;
-$shadowBox: 3px 3px 10px 0 #222;
-$line: linear-gradient(270deg,$blueDark,$blueLight,$pink);
-$transition: all 0.3s ease-out;
 
 //all webs
 .navigation{
@@ -36,13 +38,14 @@ $transition: all 0.3s ease-out;
     width: 100%;
     height: 54px;
     background: linear-gradient(270deg,$blueDark,$blueLight,$pink);
+    box-shadow: 1px 1px 8px 0 #222;
 
     &--showList{
         background: $line;
 
         #{$nav}__list{
             box-shadow: 2px 2px 2px 1px #00000066;
-            transform: translateY(95px);
+            transform: translateY(120px);
         }
     }
     &__list{
@@ -440,6 +443,10 @@ $transition: all 0.3s ease-out;
         font-weight: bold;
         padding: 0px 20px 10px;
     }
+    &__bold{
+        font-weight: bold;
+        display: inline;
+    }
     &__list{
         padding-left: 20px;
         margin-top: -15px;
@@ -458,6 +465,11 @@ $transition: all 0.3s ease-out;
     &__link{
         color: $pink;
         font-weight: bold;
+    }
+    &__link2{
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
     }
     &__shareBtn{
         display: flex;
@@ -541,15 +553,24 @@ $transition: all 0.3s ease-out;
 
 //--------------------------------------------dish website ------------------------------------------------
 .recipe{
+    $rec: &;
+
     display: flex;
     flex-direction: column;
     &__top, &__bottom{
         font-size: 20px;
         line-height: 30px;
+        // background: $blueDark;
+        color: #fff;
     }
     &__bottom{
-        padding: 0px 15px;
-        margin-bottom: 30px;
+        padding: 30px 15px 30px;
+    }
+    &__lead{
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 0 15px;
+        font-weight: 100;
     }
     &__image{
         &Box{
@@ -558,65 +579,91 @@ $transition: all 0.3s ease-out;
         }
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
     &__info{
-        // background: $pink;
+        background: #fff;
+        padding: 5px 0;
         width: 100%;
-        padding: 15px;
-        color: #fff;
+        color: $blueDark;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 30px;
+        font-size: 25px;
         white-space: nowrap;
-        font-size: 20px;
-        line-height: 20px;
+        // text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4);
     }
     &__kcal{
-        background: $pink;
-        border-radius: 5px;
-        padding: 5px 10px;
+        // background: $pink;
+        // border-radius: 5px;
+        // padding: 5px 10px;
         margin-right: 30px;
     }
     &__macro{
         display: flex;
-        background: $blueDark;
         border-radius: 5px;
         padding: 0 5px;
     }
-    &__ingredient{
-        // background: $blueDark;
-        padding: 5px;
-        &--protein{
-            // color: red;
-        }
-        &--carbohydrates{
-            // color: green;
-        }
-        &--fats{
-            // color: yellow;
-        }
+    &__macroIngredient{
+        margin: 5px 10px;
     }
     &__dishInfo{
         padding: 0px 15px;
     }
     &__dishName{
         font-weight: bold;
-        border-bottom: 1px solid $blueDark;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
+        padding: 30px 0;
         letter-spacing: 2px;
-        font-size: 30px;
+        font-size: 40px;
         text-transform: uppercase;
         text-align: center;
+        line-height: 40px;
+        text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4);
+        padding: 30px 15px 30px;
     }
-    &__title{
+    &__title, &__preperTitle{
+        padding: 10px 0;
         font-weight: bold;
-        margin-top: 10px;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4);
     }
-    &__preperTitle{
-        font-weight: bold;
-        margin-top: 10px;
+    &__title, &__preperTitle, &__dishName{
+        &:after{
+            content: "";
+            width: 120px;
+            height: 5px;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: block;
+            box-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4);
+        }
+    }
+    &__description{
+        padding: 0px 0px 15px;
+    }
+    &__web{
+        &, .navigation{
+            background: $line2;
+            // box-shadow: none;
+        }
+        .navigation__list{
+            background: $line2;
+        }
+        .nextArticles__mainTitle{
+            background: #fff;
+            color: $blueDark;
+        }
+        .nextArticles__articleArrow, .nextArticles__articleTitle{
+            color: #fff;
+        }
+        .footer {
+            background: $line2;
+        }
+        .nextArticles__article{
+            border-bottom: 1px solid #fff;
+        }
     }
 }
 
@@ -846,6 +893,7 @@ $transition: all 0.3s ease-out;
             font-weight: bold;
             font-size: 40px;
             padding: 20px 0;
+            border-radius: 10px;
         }
         &__box{
             flex-direction: row;
@@ -862,6 +910,7 @@ $transition: all 0.3s ease-out;
                 margin: 20px auto;
                 font-size: 26px;
                 line-height: 32px;
+                text-align: center;
             }
             &Image{
                 width: 500px;
@@ -869,33 +918,64 @@ $transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
             }
             &:hover{
-                #{$next}__articleArrow{
-                    color: $pink;
-                }
                 #{$next}__articleImage{
-                    filter: brightness(1.1);
-                }
-                #{$next}__articleTitle{
-                    color: $pink;
+                    filter: brightness(1.2);
+                    transform: scale(0.93);
                 }
             }
         }
-        
     }
     .fb__btn{
         text-align: left;
     }
     //--------------------------------------------dish website ------------------------------------------------
     .recipe{
-        // display: flex;
         width: 1200px;
-        margin: 0 auto;
-        &__top{
-            display: flex;
-            flex-direction: row;
+        margin: 30px auto;
+        &__top, &__bottom{
+            background: transparent;
+        }
+        &__dishInfo{
+            font-size: 26px;
+            line-height: 46px;
+        }
+        &__dishName{
+            text-align: left;
+            padding: 15px 0 30px;
+        }
+        &__title, &__preperTitle{
+            // box-shadow: $shadowBox;
         }
         &__imageBox{
             order: 1;
+            box-shadow: $shadowBox;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            background: #fff;
+        }
+        &__info{
+            height: 75px;
+            font-size: 50px;
+            background: transparent;
+            font-weight: bold;
+        }
+        &__kcal{
+            margin-right: 100px;
+        }
+        &__macroIngredient{
+            margin-right: 30px;
+        }
+        &__ingredients{
+            font-size: 24px;
+        }
+        &__lead{
+            font-weight: 100;
+            font-size: 26px;
+            line-height: 46px;
+        }
+        &__description{
+            font-size: 26px;
+            line-height: 46px;
         }
     }
 }
