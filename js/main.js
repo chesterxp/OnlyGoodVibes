@@ -406,6 +406,7 @@ var onlyGoodVibes = {
         o.animateAllLinks();
         o.changeCurrentYear();
         // o.shareBtn(o);
+        o.checkReferrer();
     },
     //isMobileDevice
     checkDevice: function(){
@@ -594,6 +595,10 @@ var onlyGoodVibes = {
         btns.forEach((btn) =>{
             btn.setAttribute('href', `https://www.facebook.com/sharer.php?u=${shareURL}`)
         })
+    }
+    checkReferrer: () =>{
+        const ref = document.referrer;
+        console.log('------------------Referrer------------', ref);
     }
 }
 
