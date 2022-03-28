@@ -131,7 +131,8 @@ body{
     text-align: center;
     position: relative;
     &--position{
-        background-position: 50% 0% !important;
+        // background-position: 50% 0% !important;
+        background-position: 25% !important;
     }
     &__word{
         color: #fff;
