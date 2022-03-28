@@ -1,281 +1,548 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Only Good Vibes. Tylko pozytywne wibracje. Blog o zdrowym stylu zycia. Dieta, trening i równowaga w zyciu.">
-	<meta name="keywords" content="dobre wibracje, good vibes, pozytywne myślenie, dieta, psychologia, trening, równowaga, harmonia, hashimoto, poradnik, niedoczynność tarczycy">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Only Good Vibes. Tylko pozytywne wibracje. Blog o zdrowym stylu zycia. Dieta, trening i równowaga w zyciu."
+    />
+    <meta
+      name="keywords"
+      content="dobre wibracje, good vibes, pozytywne myślenie, dieta, psychologia, trening, równowaga, harmonia, hashimoto, poradnik, niedoczynność tarczycy"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Only Good Vibes</title>
-    <link rel="stylesheet" href="./css/main.min.css?v4">
+    <link rel="stylesheet" href="./css/main.min.css?v4" />
     <script defer src="./js/main.min.js?v4"></script>
 
-    <link rel="icon"  type="image/jpg" href="./image/flavIcon.jpg">
+    <link rel="icon" type="image/jpg" href="./image/flavIcon.jpg" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97017090-7"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-97017090-7"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-97017090-7');
+      gtag("config", "UA-97017090-7");
     </script>
-
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="navigation">
-        <a href="./index.html" class="logoOGV logoOGV--nav">
-            <div class="logoOGV__box">
-                <div class="logoOGV__text">Only</div>
-                <div class="logoOGV__text">Good</div>
-                <div class="logoOGV__text">Vibes</div>
-                <div class="logoOGV__line"></div>
-            </div>
-        </a>
-        <div class="navigation__list">
-            <a class="navigation__link" href="#aboutMe">O Mnie</a>
-            <a class="navigation__link" href="./articles/articles.html">Artykuły</a>
-            <a class="navigation__link" href="./recipes/recipes.html">Przepisy</a>
-            <a class="navigation__link" href="#contact">Kontakt</a>
+      <a href="./index.html" class="logoOGV logoOGV--nav">
+        <div class="logoOGV__box">
+          <div class="logoOGV__text">Only</div>
+          <div class="logoOGV__text">Good</div>
+          <div class="logoOGV__text">Vibes</div>
+          <div class="logoOGV__line"></div>
         </div>
-        <div class="navigation__hamburger">
-            <div class="navigation__hamburgerBox hide">
-                <div class="navigation__hamburgerLine"></div>
-            </div>
+      </a>
+      <div class="navigation__list">
+        <a class="navigation__link" href="#aboutMe">O Mnie</a>
+        <a class="navigation__link" href="./articles/articles.html">Artykuły</a>
+        <a class="navigation__link" href="./recipes/recipes.html">Przepisy</a>
+        <a class="navigation__link" href="#contact">Kontakt</a>
+      </div>
+      <div class="navigation__hamburger">
+        <div class="navigation__hamburgerBox hide">
+          <div class="navigation__hamburgerLine"></div>
         </div>
+      </div>
     </div>
-    <div class="heroBox heroBox--position" data-image-src='{"type":"background","desktopSrc":"photo0c.jpg"}'>
-            <div class="heroBox__word showHideElement">Only</div>
-            <div class="heroBox__word showHideElement">Good</div>
-            <div class="heroBox__word showHideElement">Vibes</div>
+    <div
+      class="heroBox heroBox--position"
+      data-image-src='{"type":"background","desktopSrc":"photo0c.jpg"}'
+    >
+      <div class="heroBox__word showHideElement">Only</div>
+      <div class="heroBox__word showHideElement">Good</div>
+      <div class="heroBox__word showHideElement">Vibes</div>
     </div>
     <div class="welcomeBox showHideElement" id="aboutMe">
-        <div class="welcomeBox__left">
-            <div class="welcomeBox__title">Witaj!</div>
-            <div data-image-src='{"type":"background","desktopSrc":"photo0a.jpg"}' class="welcomeBox__image"></div>
-        </div>
-        <div class="welcomeBox__right">
-            <p class="first">Jestem szczęśliwa, że tu jesteś!</p>
-            <p>Mam na imię Aneta, przekroczyłam już magiczną granicę 30-stki i doszłam do takiego momentu w moim życiu, że chcę poświęcać każdą moja wolną chwilę na aktywności, które sprawiają mi radość i powodują magiczny trzepot motyli w moim brzuchu. </p>
-            <p>Ten blog powstał z głębokiej potrzeby spełniania siebie. Owe spełnianie ma szansę wprowadzać w moim życiu jeszcze większą równowagę i wewnętrzną radość z bycia tu i teraz. Chciałabym dzielić się tą równowagą i sposobami jak do niej dążyć z każdą napotkaną osobą w moim życiu.
-                Uważam, że nic w naszym życiu nie dzieje się przypadkowo. Wszystko czego doświadczamy ma swój ukryty sens. Nie zawsze jesteśmy w stanie dostrzec ten sens od razu,czasem potrzeba dni tygodni a nawet lat, aby zobaczyć, że jakieś wydarzenie w naszym życiu jest lekcją. Dla mnie decydującym momentem w życiu był okres opanowującej nasz świat pandemii. To wtedy postanowiłam odbić się od emocjonalnego dna i ruszyć z dobra energią. Dzięki tej energii powstała ta właśnie strona.
-                </p>
-            <p>Każdy z nas jest inny, potrzebujemy różnych bodźców aby czuć w swoim życiu spokój i harmonię. Być może stwierdzisz, że nie potrzebujesz tracić czasu na czytanie tego co tutaj będzie. Ale serdecznie zapraszam Cię do mojego świata, w którym postaram się inspirować Cię do tego by chcieć sięgać po więcej dla siebie. Właśnie z tą osobą , którą widzisz codziennie w lustrze, przyszło Ci żyć najdłużej i do końca świata. Sprawmy, aby to życie miało szansę stać się tym najpiękniejszym. </p>
-        </div>
+      <div class="welcomeBox__left">
+        <div class="welcomeBox__title">Witaj!</div>
+        <div
+          data-image-src='{"type":"background","desktopSrc":"photo0a.jpg"}'
+          class="welcomeBox__image"
+        ></div>
+      </div>
+      <div class="welcomeBox__right">
+        <p class="first">Jestem szczęśliwa, że tu jesteś!</p>
+        <p>
+          Mam na imię Aneta, przekroczyłam już magiczną granicę 30-stki i
+          doszłam do takiego momentu w moim życiu, że chcę poświęcać każdą moja
+          wolną chwilę na aktywności, które sprawiają mi radość i powodują
+          magiczny trzepot motyli w moim brzuchu.
+        </p>
+        <p>
+          Ten blog powstał z głębokiej potrzeby spełniania siebie. Owe
+          spełnianie ma szansę wprowadzać w moim życiu jeszcze większą równowagę
+          i wewnętrzną radość z bycia tu i teraz. Chciałabym dzielić się tą
+          równowagą i sposobami jak do niej dążyć z każdą napotkaną osobą w moim
+          życiu. Uważam, że nic w naszym życiu nie dzieje się przypadkowo.
+          Wszystko czego doświadczamy ma swój ukryty sens. Nie zawsze jesteśmy w
+          stanie dostrzec ten sens od razu,czasem potrzeba dni tygodni a nawet
+          lat, aby zobaczyć, że jakieś wydarzenie w naszym życiu jest lekcją.
+          Dla mnie decydującym momentem w życiu był okres opanowującej nasz
+          świat pandemii. To wtedy postanowiłam odbić się od emocjonalnego dna i
+          ruszyć z dobra energią. Dzięki tej energii powstała ta właśnie strona.
+        </p>
+        <p>
+          Każdy z nas jest inny, potrzebujemy różnych bodźców aby czuć w swoim
+          życiu spokój i harmonię. Być może stwierdzisz, że nie potrzebujesz
+          tracić czasu na czytanie tego co tutaj będzie. Ale serdecznie
+          zapraszam Cię do mojego świata, w którym postaram się inspirować Cię
+          do tego by chcieć sięgać po więcej dla siebie. Właśnie z tą osobą ,
+          którą widzisz codziennie w lustrze, przyszło Ci żyć najdłużej i do
+          końca świata. Sprawmy, aby to życie miało szansę stać się tym
+          najpiękniejszym.
+        </p>
+      </div>
     </div>
     <div class="articlesBox" id="articles">
-        <h1 class="articlesBox__mainTitle">Pozytywne wibracje</h1>
+      <h1 class="articlesBox__mainTitle">Pozytywne wibracje</h1>
 
-        <a class="articlesBox__article showHideElement" href="./articles/article13.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Krótka historia z morałem</div>
-                <div class="articlesBox__articleText">
-                    Możesz uwierzyć lub nie, ale dość długo siedziałam przed otwartym monitorem laptopa, z czystą białą kartką, którą nie wiedziałam w jaki sposób zapełnić znaczącym potokiem słów…
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo13a.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article13.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Emocje</div>
+          <div class="articlesBox__articleTitle">Krótka historia z morałem</div>
+          <div class="articlesBox__articleText">
+            Możesz uwierzyć lub nie, ale dość długo siedziałam przed otwartym
+            monitorem laptopa, z czystą białą kartką, którą nie wiedziałam w
+            jaki sposób zapełnić znaczącym potokiem słów…
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo13a.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article12.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Dieta</div>
-                <div class="articlesBox__articleTitle">Czego w mojej kuchni nigdy nie zabraknie! Część 1</div>
-                <div class="articlesBox__articleText">
-                    Chciałabym Wam opowiedzieć co zawsze mam, kupuję na zapas i bez czego nie wyobrażam sobie mojego zdrowego stylu życia w kwestii odżywiania...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo12.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article12.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Dieta</div>
+          <div class="articlesBox__articleTitle">
+            Czego w mojej kuchni nigdy nie zabraknie! Część 1
+          </div>
+          <div class="articlesBox__articleText">
+            Chciałabym Wam opowiedzieć co zawsze mam, kupuję na zapas i bez
+            czego nie wyobrażam sobie mojego zdrowego stylu życia w kwestii
+            odżywiania...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo12.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./articles/article11.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Kwiecień miesiącem samoakceptacji</div>
-                <div class="articlesBox__articleText">
-                    Sama dla siebie stworzyłam miesiąc tematyczny – kwiecień miesiącem samoakceptacji… Podsumowanie tego miesiąca z towarzyszącym mi w głowie tematem głównym postanowiłam opisać w artykule, który masz przed oczyma...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo11.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article11.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Emocje</div>
+          <div class="articlesBox__articleTitle">
+            Kwiecień miesiącem samoakceptacji
+          </div>
+          <div class="articlesBox__articleText">
+            Sama dla siebie stworzyłam miesiąc tematyczny – kwiecień miesiącem
+            samoakceptacji… Podsumowanie tego miesiąca z towarzyszącym mi w
+            głowie tematem głównym postanowiłam opisać w artykule, który masz
+            przed oczyma...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo11.jpg","size":"small"}'
+        ></div>
+      </a>
 
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./recipes/recipe3.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Przepisy</div>
+          <div class="articlesBox__articleTitle">
+            Fit batony owsiano-daktyLOVE
+          </div>
+          <div class="articlesBox__articleText">
+            Czy znasz to uczucie gdy jesteś tuż na finiszu zakupów, dumny jak
+            paw, że tym razem udało Ci się wygrać z pokusami i nie ugiąłeś się
+            przed słodkościami...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"recipe3.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./recipes/recipe3.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Przepisy</div>
-                <div class="articlesBox__articleTitle">Fit batony owsiano-daktyLOVE</div>
-                <div class="articlesBox__articleText">
-                    Czy znasz to uczucie gdy jesteś tuż na finiszu zakupów, dumny jak paw, że tym razem udało Ci się wygrać z pokusami i nie ugiąłeś się przed słodkościami...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"recipe3.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./recipes/recipe2.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Przepisy</div>
+          <div class="articlesBox__articleTitle">
+            GofroLOVE czyli zdrowe gofry dla wymagających
+          </div>
+          <div class="articlesBox__articleText">
+            Smakołyk ten polecam zarówno jako ofertę na zdrowe śniadanie a także
+            ciekawą kolację dla wszystkich miłośników słodkich dań...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"recipe2.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./recipes/recipe2.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Przepisy</div>
-                <div class="articlesBox__articleTitle">GofroLOVE czyli zdrowe gofry dla wymagających</div>
-                <div class="articlesBox__articleText">
-                    Smakołyk ten polecam zarówno jako ofertę na zdrowe śniadanie a także ciekawą kolację dla wszystkich miłośników słodkich dań...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"recipe2.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article10.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Hashimoto</div>
+          <div class="articlesBox__articleTitle">
+            TERAPEUTYCZNA MOC JEDZENIA W CHOROBACH TARCZYCY
+          </div>
+          <div class="articlesBox__articleText">
+            To co znajdziesz w dzisiejszym artykule, to zalecenia dietetyczne ze
+            wskazaniem dla osób, które tak jak ja borykają się z niedoczynnością
+            tarczycy i Hashimoto ...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo10.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article10.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto</div>
-                <div class="articlesBox__articleTitle">TERAPEUTYCZNA MOC JEDZENIA W CHOROBACH TARCZYCY</div>
-                <div class="articlesBox__articleText">
-                    To co znajdziesz w dzisiejszym artykule, to zalecenia dietetyczne ze wskazaniem dla osób, które tak jak ja borykają się z niedoczynnością tarczycy i Hashimoto ...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo10.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article9.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Hashimoto</div>
+          <div class="articlesBox__articleTitle">
+            Zdrowie czy choroba, kobieta czy mężczyzna – BADAJ TARCZYCĘ!
+          </div>
+          <div class="articlesBox__articleText">
+            Być może niektórzy z Was, już borykają się z upośledzeniem tego
+            małego gruczołu, jednak zachęcam także tych potencjalnie zdrowych do
+            pewnego rozeznania w tej kwestii, ponieważ niestety liczba osób z
+            chorobami tarczycy ciągle wzrasta ...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo9.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./articles/article9.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto</div>
-                <div class="articlesBox__articleTitle">Zdrowie czy choroba, kobieta czy mężczyzna – BADAJ TARCZYCĘ!</div>
-                <div class="articlesBox__articleText">
-                    Być może niektórzy z Was, już borykają się z upośledzeniem tego małego gruczołu, jednak zachęcam także tych potencjalnie zdrowych do pewnego rozeznania w tej kwestii, ponieważ niestety liczba osób  z chorobami tarczycy ciągle wzrasta ...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo9.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article8.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Zdrowie</div>
+          <div class="articlesBox__articleTitle">
+            Odporność na przedwiośniu <br />
+            cz. 2
+          </div>
+          <div class="articlesBox__articleText">
+            Ta część to kolejna dawka praktycznych informacji na temat
+            wzmacniania odporności. Probiotyki, witaminy, czosnek, aronia i inni
+            goście zapraszają!
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo8.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article8.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Zdrowie</div>
-                <div class="articlesBox__articleTitle">Odporność na przedwiośniu <br> cz. 2</div>
-                <div class="articlesBox__articleText">
-                    Ta część to kolejna dawka praktycznych informacji na temat wzmacniania odporności. Probiotyki, witaminy, czosnek, aronia i inni goście zapraszają!
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo8.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./recipes/recipe1.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Przepisy</div>
+          <div class="articlesBox__articleTitle">
+            Omlet <br />
+            kokosowo-owocowy
+          </div>
+          <div class="articlesBox__articleText">
+            Oto moja propozycja zdrowego śniadania...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo7.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./recipes/recipe1.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Przepisy</div>
-                <div class="articlesBox__articleTitle">Omlet <br> kokosowo-owocowy</div>
-                <div class="articlesBox__articleText">
-                    Oto moja propozycja zdrowego śniadania...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo7.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article6.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Zdrowie</div>
+          <div class="articlesBox__articleTitle">
+            Odporność na przedwiośniu <br />
+            cz. 1
+          </div>
+          <div class="articlesBox__articleText">
+            Temat przypłynął do mnie wraz z moją kolacją. Patrząc na nią
+            stwierdziłam, że właśnie cudownie wspomagam swoją odporność.
+            Dlaczego się tym teraz nie podzielić z moimi czytelnikami.
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo6.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article6.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Zdrowie</div>
-                <div class="articlesBox__articleTitle">Odporność na przedwiośniu <br> cz. 1</div>
-                <div class="articlesBox__articleText">
-                    Temat przypłynął do mnie wraz z moją kolacją. Patrząc na nią stwierdziłam, że właśnie cudownie wspomagam swoją odporność. Dlaczego się tym teraz nie podzielić z moimi czytelnikami.
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo6.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article5.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Emocje</div>
+          <div class="articlesBox__articleTitle">
+            Nasz szanowny towarzysz <br />
+            Pan Stres cz. 2
+          </div>
+          <div class="articlesBox__articleText">
+            To co właśnie masz przed oczyma to kolejna część artykułu o naszym
+            nieustannym druhu Panu Stresie. Zapraszam Cię do dalszej części
+            lektury, jeśli stwierdzisz, że to zbyt wiele tekstu jak na jeden raz
+            śmiało rób sobie przerwy.
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo5.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./articles/article5.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Nasz szanowny towarzysz <br> Pan Stres cz. 2</div>
-                <div class="articlesBox__articleText">
-                    To co właśnie masz przed oczyma to kolejna część artykułu o naszym nieustannym druhu Panu Stresie. Zapraszam Cię do dalszej części lektury, jeśli stwierdzisz, że to zbyt wiele tekstu jak na jeden raz śmiało rób sobie przerwy.
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo5.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article4.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Emocje</div>
+          <div class="articlesBox__articleTitle">
+            Nasz szanowny towarzysz <br />
+            Pan Stres cz. 1
+          </div>
+          <div class="articlesBox__articleText">
+            Kilka dni temu obchodziliśmy rocznicę wybuchu pandemii w naszym
+            kraju. Czy nie brzmi to niczym z podręcznika do historii?
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo4.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article4.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Emocje</div>
-                <div class="articlesBox__articleTitle">Nasz szanowny towarzysz <br> Pan Stres cz. 1</div>
-                <div class="articlesBox__articleText">
-                    Kilka dni temu obchodziliśmy rocznicę wybuchu pandemii w naszym kraju. Czy nie brzmi to niczym z podręcznika do historii?
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo4.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article3.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Hashimoto i zdrowie</div>
+          <div class="articlesBox__articleTitle">
+            S-E-N <br />
+            Spokój, Energia, Normalność
+          </div>
+          <div class="articlesBox__articleText">
+            Sen jest najważniejszą formą regeneracji dla naszego organizmu.
+            Zarówno dla naszego ciała jak i umysłu...
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo3.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement" href="./articles/article3.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto i zdrowie</div>
-                <div class="articlesBox__articleTitle">S-E-N <br/>
-                    Spokój, Energia, Normalność</div>
-                <div class="articlesBox__articleText">
-                    Sen jest najważniejszą formą regeneracji dla naszego organizmu.  Zarówno dla naszego ciała jak i umysłu...
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo3.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement articlesBox__article--right"
+        href="./articles/article2.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Motywacja</div>
+          <div class="articlesBox__articleTitle">Od-ważne od-żywianie</div>
+          <div class="articlesBox__articleText">
+            Choroby autoimmunologiczne to armagedon dzisiejszych czasów. Często
+            atakują organizm po cichu, z ukrycia, towarzyszą różnym wydarzeniom
+            w życiu. Tak było w moim przypadku.
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo2.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a class="articlesBox__article showHideElement articlesBox__article--right" href="./articles/article2.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Motywacja</div>
-                <div class="articlesBox__articleTitle">Od-ważne od-żywianie</div>
-                <div class="articlesBox__articleText">
-                    Choroby autoimmunologiczne to armagedon dzisiejszych czasów. Często atakują organizm po cichu, z ukrycia, towarzyszą różnym wydarzeniom w życiu. Tak było w moim przypadku.
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo2.jpg","size":"small"}'></div>
-        </a>
-        
-        <a class="articlesBox__article showHideElement" href="./articles/article1.html">
-            <div class="articlesBox__articleContent">
-                <div class="articlesBox__articleTop">Hashimoto</div>
-                <div class="articlesBox__articleTitle">Dla obdarowanych hashimoto i nie tylko</div>
-                <div class="articlesBox__articleText">
-                    Hashimoto - czyli co tak naprawdę odmieniło moje życie…  Mogę stwierdzić, że choroba ta bywa istnym demonem a jednocześnie błogosławieństwem
-                </div>
-            </div>
-            <div class="articlesBox__articleImage" data-image-src='{"type":"background","desktopSrc":"photo1.jpg","size":"small"}'></div>
-        </a>
+      <a
+        class="articlesBox__article showHideElement"
+        href="./articles/article1.html"
+      >
+        <div class="articlesBox__articleContent">
+          <div class="articlesBox__articleTop">Hashimoto</div>
+          <div class="articlesBox__articleTitle">
+            Dla obdarowanych hashimoto i nie tylko
+          </div>
+          <div class="articlesBox__articleText">
+            Hashimoto - czyli co tak naprawdę odmieniło moje życie… Mogę
+            stwierdzić, że choroba ta bywa istnym demonem a jednocześnie
+            błogosławieństwem
+          </div>
+        </div>
+        <div
+          class="articlesBox__articleImage"
+          data-image-src='{"type":"background","desktopSrc":"photo1.jpg","size":"small"}'
+        ></div>
+      </a>
 
-        <a href="./articles/articles.html" class="articlesBox__next">
-            <div class="articlesBox__link">Wszystkie pozytywne wibracje</div>
-            <svg class="articlesBox__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
-                <g><g><path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/></g></g>
-            </svg>
-        </a>
-
+      <a href="./articles/articles.html" class="articlesBox__next">
+        <div class="articlesBox__link">Wszystkie pozytywne wibracje</div>
+        <svg
+          class="articlesBox__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Layer_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 492.004 492.004"
+          style="enable-background: new 0 0 492.004 492.004"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <path
+                d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136    c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002    v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864    c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872    l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"
+              />
+            </g>
+          </g>
+        </svg>
+      </a>
     </div>
     <div class="footer showHideElement" id="contact">
-        <div class="footer__box footer__box--contact">
-            <!-- <div class="footer__link">Kontakt</div> -->
-            <div class="footer__link">only.good.vibes@wp.pl</div>
-        </div>
-        <div class="footer__box footer__box--icon">
-            <a href="https://www.facebook.com/Only-Good-Vibes-107729894717159/" class="footer__icon fb">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Bold" enable-background="new 0 0 24 24" height="20" viewBox="0 0 24 24" width="20"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/bruanetka/" class="footer__icon inst">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 511 511.9" width="20"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
-            </a>
-            <a href="mailto:only.good.vibes@wp.pl" class="footer__icon mail">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.867 477.867" style="enable-background:new 0 0 477.867 477.867;" xml:space="preserve"><g><g><path d="M460.8,68.267H17.067l221.867,182.75L463.309,68.779C462.488,68.539,461.649,68.368,460.8,68.267z"/></g> </g> <g><g><path d="M249.702,286.31c-6.288,5.149-15.335,5.149-21.623,0L0,98.406v294.127c0,9.426,7.641,17.067,17.067,17.067H460.8    c9.426,0,17.067-7.641,17.067-17.067V100.932L249.702,286.31z"/></g></g></svg>
-            </a>
-        </div>
-        <div class="footer__box footer__box--logo">
-            <a href="../index.html" class="logoOGV logoOGV--footer">
-                <div class="logoOGV__box">
-                    <div class="logoOGV__text">Only</div>
-                    <div class="logoOGV__text">Good</div>
-                    <div class="logoOGV__text">Vibes</div>
-                    <div class="logoOGV__line"></div>
-                </div>
-            </a>
-        </div>
-        <div class="footer__box footer__box--webRights">
-            Only Good Vibes <span class="currentYear">2020 </span> © Designed By <div class="footer__author">Luki</div>
-        </div>
+      <div class="footer__box footer__box--contact">
+        <!-- <div class="footer__link">Kontakt</div> -->
+        <div class="footer__link">only.good.vibes@wp.pl</div>
+      </div>
+      <div class="footer__box footer__box--icon">
+        <a
+          href="https://www.facebook.com/Only-Good-Vibes-107729894717159/"
+          class="footer__icon fb"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Bold"
+            enable-background="new 0 0 24 24"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+          >
+            <path
+              d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/bruanetka/"
+          class="footer__icon inst"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            viewBox="0 0 511 511.9"
+            width="20"
+          >
+            <path
+              d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+            />
+            <path
+              d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+            />
+            <path
+              d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+            />
+          </svg>
+        </a>
+        <a href="mailto:only.good.vibes@wp.pl" class="footer__icon mail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="20"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="Capa_1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 477.867 477.867"
+            style="enable-background: new 0 0 477.867 477.867"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  d="M460.8,68.267H17.067l221.867,182.75L463.309,68.779C462.488,68.539,461.649,68.368,460.8,68.267z"
+                />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path
+                  d="M249.702,286.31c-6.288,5.149-15.335,5.149-21.623,0L0,98.406v294.127c0,9.426,7.641,17.067,17.067,17.067H460.8    c9.426,0,17.067-7.641,17.067-17.067V100.932L249.702,286.31z"
+                />
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__box footer__box--logo">
+        <a href="../index.html" class="logoOGV logoOGV--footer">
+          <div class="logoOGV__box">
+            <div class="logoOGV__text">Only</div>
+            <div class="logoOGV__text">Good</div>
+            <div class="logoOGV__text">Vibes</div>
+            <div class="logoOGV__line"></div>
+          </div>
+        </a>
+      </div>
+      <div class="footer__box footer__box--webRights">
+        Only Good Vibes <span class="currentYear">2020 </span> © Designed By
+        <div class="footer__author">Luki</div>
+        <a href="/pages/dietForm.html">Dieta</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
