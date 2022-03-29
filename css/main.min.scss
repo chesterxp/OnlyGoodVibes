@@ -683,16 +683,7 @@ body {
   color: #fff;
   width: 1000px;
   margin: 20px auto;
-  padding: 20px;
   &Item {
-  }
-  &__title {
-  }
-  input {
-    width: 100%;
-    padding: 10px;
-    color: #333;
-    margin: 5px 0;
   }
 }
 
@@ -1002,5 +993,24 @@ body {
       font-size: 26px;
       line-height: 46px;
     }
+  }
+}
+
+//diet form
+.form {
+  background: #333;
+  color: #fff;
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  &Item {
+  }
+  &__title {
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    color: #333;
+    margin: 5px 0;
   }
 }

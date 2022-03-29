@@ -5,15 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diet Form</title>
+    <link rel="stylesheet" href="../css/form.css" />
   </head>
   <body>
-    <form action="https://formsubmit.co/only.good.vibes@wp.pl" method="POST">
+    <form
+      class="form"
+      action="https://formsubmit.co/only.good.vibes@wp.pl"
+      method="POST"
+    >
       <input type="hidden" name="_template" value="box" />
       <input type="hidden" name="_subject" value="Ankieta do diety" />
-      <label for="name">Nazwa labela</label>
-      <input type="text" name="name" required />
-      <label for="email">email</label>
-      <input type="email" name="email" required />
+
+      <div class="formItem">
+        <div class="formItem__title">Podstawowe informacje</div>
+        <div class="formItem__answer">
+          <!-- <div class="formQuestion">Imię</div> -->
+          <input
+            class="formQuestionInput"
+            type="text"
+            name="imie"
+            required
+            placeholder="Imie"
+          />
+
+          <!-- <div class="formQuestion">Nazwisko</div> -->
+          <input
+            class="formQuestionInput"
+            type="text"
+            name="nazwisko"
+            required
+            placeholder="Nazwisko"
+          />
+
+          <!-- <div class="formQuestion">Email</div> -->
+          <input
+            class="formQuestionInput"
+            type="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+
+          <!-- <div class="formQuestion">Wiek(data urodzenia)</div> -->
+          <input
+            class="formQuestionInput"
+            type="number"
+            name="wiek"
+            required
+            placeholder="Wiek(data urodzenia)"
+          />
+
+          <!-- <div class="formQuestion">Waga</div> -->
+          <input
+            class="formQuestionInput"
+            type="number"
+            name="waga"
+            required
+            placeholder="Waga(kg)"
+          />
+          <!-- <div class="formQuestion">Wzrost</div> -->
+          <input
+            class="formQuestionInput"
+            type="number"
+            name="wzrost"
+            required
+            placeholder="Wzrost(cm)"
+          />
+
+          <!-- <div class="formQuestion">Wzrost</div> -->
+          <input
+            class="formQuestionInput"
+            type="text"
+            name="wzrost"
+            required
+            placeholder="cos"
+          />
+        </div>
+      </div>
+
       <button type="submit">Send</button>
     </form>
   </body>

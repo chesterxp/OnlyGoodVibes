@@ -1,0 +1,41 @@
+$blueDark: #6267d3;
+$blueLight: #a19fe0;
+$pink: #d090d5;
+$black: #222;
+$gray: #8f8f8f;
+$shadowBox: 3px 3px 10px 0 #222;
+$line: linear-gradient(270deg, $blueDark, $blueLight, $pink);
+$line2: linear-gradient(270deg, $pink, $blueLight, $blueDark);
+$transition: all 0.3s ease-out;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Crimson Pro", serif;
+  padding-top: 54px;
+}
+//diet form
+.form {
+  background: #333;
+  color: #fff;
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  &Item {
+  }
+  &__title {
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    color: #333;
+    margin: 5px 0;
+  }
+}

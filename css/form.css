@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Crimson Pro", serif;
+  padding-top: 54px;
+}
+
+.form {
+  background: #333;
+  color: #fff;
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  margin: 5px 0;
+}
+/*# sourceMappingURL=form.css.map */
