@@ -1,0 +1,21 @@
+ANKIETA
+1.	Podstawowe informacje:
+a.	wiek – data urodzenia. 
+b.	waga, 
+c.	wzrost,
+d.	adres mailowy.
+2.	Jaką masz aktywność fizyczną?
+a.	praca siedząca?
+b.	jeśli masz smartwatch to ile robisz dziennie kroków?
+3.	Wypisz dwa przykładowe dni swojego żywienia, jak najdokładniej, wliczając w to płyny, wodę, herbatę, kawę.  (Czy wiesz ile kalorii spożywasz obecnie?)
+4.	Czy przyjmujesz jakieś suplementy, leki na stałe, jeśli tak to jakie w jakich porach dnia itp.
+5.	Jeśli masz jakieś ostatnie badania krwi to dołącz wszystko. (Czy masz możliwość wykonania badań jeśli będą wymagane do diety?).
+6.	Czy masz stwierdzone jakieś choroby?
+7.	Czy masz jakieś alergie, nietolerancje pokarmowe?
+8.	Czy zauważasz, że po jakiś produktach źle się czujesz, masz dolegliwości ze strony układu pokarmowego takie jak: wzdęcia, gazy, zaparcia, bóle brzucha, biegunka?
+9.	Czy regularnie się wypróżniasz?
+10.	Czy są jakieś produkty których nie lubisz i nie chcesz jeść?
+11.	Czy w rozpisce mają być „słodkie” smaki, posiłki na słodko, czy wolisz wytrawnie?
+12.	Jak ogólnie funkcjonujesz, jakie masz samopoczucie, poziom energii, jak sypiasz?
+13.	Czy są jakieś produkty, które uwielbiasz jeść w szczególności?
+14.	Na jakich celach najbardziej ci zależy?

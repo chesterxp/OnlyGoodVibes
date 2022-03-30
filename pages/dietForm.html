@@ -13,12 +13,9 @@
       action="https://formsubmit.co/only.good.vibes@wp.pl"
       method="POST"
     >
-      <input type="hidden" name="_template" value="box" />
-      <input type="hidden" name="_subject" value="Ankieta do diety" />
-
-      <div class="formItem">
-        <div class="formItem__title">Podstawowe informacje</div>
-        <div class="formItem__answer">
+      <div class="formElement formElement--baseInfo">
+        <div class="formElement__title">Podstawowe informacje</div>
+        <div class="formElement__answer">
           <!-- <div class="formQuestion">Imię</div> -->
           <input
             class="formQuestionInput"
@@ -71,18 +68,24 @@
             required
             placeholder="Wzrost(cm)"
           />
+        </div>
+      </div>
 
-          <!-- <div class="formQuestion">Wzrost</div> -->
+      <div class="formElement">
+        <div class="formElement__title">Jaką masz aktywność fizyczną?</div>
+        <div class="formElement__answer">
           <input
             class="formQuestionInput"
             type="text"
-            name="wzrost"
+            name="Aktywność fizyczna"
             required
             placeholder="cos"
           />
         </div>
       </div>
 
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_subject" value="Ankieta do diety" />
       <button type="submit">Send</button>
     </form>
   </body>
